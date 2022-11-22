@@ -1,0 +1,16 @@
+<app-header titulo="App Bolado"></app-header>
+
+<ion-content>
+
+    <!-- List of Text Items -->
+    <ion-list>
+      <ion-item *ngFor="let c of componentes" [routerLink]="c.link" detail>
+        <ion-icon [name]="c.icone"></ion-icon>
+        <ion-label>{{c.nome}}</ion-label>
+      </ion-item>
+    
+    </ion-list>
+
+  <ion-button routerLink="/alert">Alertas</ion-button>
+  <ion-button routerLink="/action-sheet">Páginas</ion-button>
+</ion-content>

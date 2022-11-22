@@ -1,0 +1,18 @@
+<app-header [titulo]="titulo || 'Alerta!'" >
+</app-header>
+
+<ion-content padding>
+
+    <ion-button color = "primary" expand="full" (click)="presentAlert()">
+        Mensagem
+    </ion-button>
+
+    <ion-button color = "primary" expand="full" (click)="presentEntrada()">
+        Entrada
+    </ion-button>
+
+    <ion-button color = "primary" expand="full" (click)="presentDados()">
+        Dados
+    </ion-button>
+
+</ion-content>  
