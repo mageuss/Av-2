@@ -8,16 +8,45 @@ import { Component, OnInit } from '@angular/core';
 export class InicioPage implements OnInit {
 
   componentes: Componente[] = [
+
     {
-      icone: 'alert-circle-outline',
-      nome: 'Alerta',
-      link: '/alert'
+      icone: '',
+      nome: 'Cards',
+      link: '/cards'
+    },
+    {
+      icone: '',
+      nome: 'Check Box',
+      link: '/checkbox'
     },
 
     {
-      icone: 'book-outline',
-      nome: 'Páginas',
-      link: '/action-sheet'
+      icone: '',
+      nome: 'Fab',
+      link: '/fab'
+    },
+
+    {
+      icone: '',
+      nome: 'Progess Bar',
+      link: '/progress-bar'
+    },
+
+    {
+      icone: '',
+      nome: 'Radio',
+      link: '/radio'
+    },
+
+    {
+      icone: '',
+      nome: 'Text Area',
+      link: '/textarea'
+    },
+    {
+      icone: '',
+      nome: 'Inputs',
+      link:'/input'
     }
   ];
   

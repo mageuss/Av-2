@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { TextareaPageRoutingModule } from './textarea-routing.module';
 
 import { TextareaPage } from './textarea.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TextareaPageRoutingModule
+    TextareaPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [TextareaPage]
 })

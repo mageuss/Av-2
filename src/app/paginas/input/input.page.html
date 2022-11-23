@@ -1,0 +1,19 @@
+<app-header titulo="Página de Input"></app-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Digite seu nome:</ion-label>
+      <ion-input id="texto"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Seu nome:</ion-label>
+      <ion-textarea [readonly]="true" value={{texto}} ></ion-textarea>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-button (click)="presentEnviar()">Enviar</ion-button>
+</ion-content>

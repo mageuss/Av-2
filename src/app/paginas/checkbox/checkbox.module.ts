@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { CheckboxPageRoutingModule } from './checkbox-routing.module';
 
 import { CheckboxPage } from './checkbox.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CheckboxPageRoutingModule
+    CheckboxPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [CheckboxPage]
 })

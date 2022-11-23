@@ -12,14 +12,6 @@ const routes: Routes = [
     loadChildren: () => import('./paginas/inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
-    path: 'alert',
-    loadChildren: () => import('./paginas/alert/alert.module').then( m => m.AlertPageModule)
-  },
-  {
-    path: 'action-sheet',
-    loadChildren: () => import('./paginas/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
-  },
-  {
     path: 'cards',
     loadChildren: () => import('./paginas/cards/cards.module').then( m => m.CardsPageModule)
   },
@@ -42,6 +34,10 @@ const routes: Routes = [
   {
     path: 'radio',
     loadChildren: () => import('./paginas/radio/radio.module').then( m => m.RadioPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./paginas/input/input.module').then( m => m.InputPageModule)
   },
 ];
 

@@ -16,7 +16,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     FormsModule,
     IonicModule,
     CardsPageRoutingModule,
-    CommonModule
+    CommonModule,
+    ComponentsModule
   ],
   declarations: [CardsPage]
 })
