@@ -24,10 +24,6 @@ const routes: Routes = [
     loadChildren: () => import('./paginas/fab/fab.module').then( m => m.FabPageModule)
   },
   {
-    path: 'textarea',
-    loadChildren: () => import('./paginas/textarea/textarea.module').then( m => m.TextareaPageModule)
-  },
-  {
     path: 'progress-bar',
     loadChildren: () => import('./paginas/progress-bar/progress-bar.module').then( m => m.ProgressBarPageModule)
   },

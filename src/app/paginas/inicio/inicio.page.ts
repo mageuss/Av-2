@@ -40,16 +40,11 @@ export class InicioPage implements OnInit {
 
     {
       icone: '',
-      nome: 'Text Area',
-      link: '/textarea'
-    },
-    {
-      icone: '',
       nome: 'Inputs',
       link:'/input'
     }
   ];
-  
+
   constructor() { }
 
   ngOnInit() {
@@ -59,5 +54,5 @@ export class InicioPage implements OnInit {
 interface Componente{
   icone: string;
   nome: string;
-  link: string
+  link: string;
 }

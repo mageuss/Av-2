@@ -1,16 +1,18 @@
-<app-header titulo="Página de Input"></app-header>
+<app-header titulo="Página de Input">
+  
+</app-header>
 
 <ion-content>
   <ion-list>
 
     <ion-item>
       <ion-label>Digite seu nome:</ion-label>
-      <ion-input id="texto"></ion-input>
+      <ion-input id="txtInput" [(ngModel)]="txtInput" ></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Seu nome:</ion-label>
-      <ion-textarea [readonly]="true" value={{texto}} ></ion-textarea>
+      <ion-textarea [readonly]="true" value={{txtArea}}></ion-textarea>
     </ion-item>
 
   </ion-list>
