@@ -13,13 +13,13 @@ export class CheckboxPage implements OnInit {
   constructor() { }
 
   async enviar() {
-if( this.i <= 1 ){
+    if (this.i <= 1) {
 
-  this.txtArea ='você marcou ' + this.i + ' opção';
+      this.txtArea = 'você marcou ' + this.i + ' opção';
 
-} else{
-  this.txtArea ='você marcou ' + this.i + ' opções';
-}
+    } else {
+      this.txtArea = 'você marcou ' + this.i + ' opções';
+    }
 
   }
 
