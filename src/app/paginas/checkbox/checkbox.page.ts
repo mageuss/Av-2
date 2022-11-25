@@ -7,20 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckboxPage implements OnInit {
   txtArea: string;
-  option: string;
+  itemSelecionado: any;
   i = 0;
 
   constructor() { }
 
-  async enviar() {
-    if (this.i <= 1) {
+  async enviar(pessoa) {
+    if (this.i === 1) {
 
-      this.txtArea = 'você marcou ' + this.i + ' opção';
+      this.txtArea = 'você marcou a opção :)';
 
     } else {
-      this.txtArea = 'você marcou ' + this.i + ' opções';
+      this.txtArea = 'você marcou não a opção :(';
     }
-
+    console.log(this.itemSelecionado);
   }
 
 

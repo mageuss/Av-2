@@ -1,6 +1,29 @@
 <app-header titulo="Páginas de Fab">
 </app-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+
+        <ion-fab-button>
+            <ion-icon name="chevron-up-circle"></ion-icon>
+        </ion-fab-button>
+
+        <ion-fab-list side="top">
+            <ion-fab-button href="input">
+                <ion-label>Input</ion-label>
+            </ion-fab-button>
+
+            <ion-fab-button href="cards">
+                <ion-label>Cards</ion-label>
+            </ion-fab-button>
+
+            <ion-fab-button href="checkbox">
+                <ion-label>Check</ion-label>
+            </ion-fab-button>
+
+        </ion-fab-list>
+
+    </ion-fab>
 
 </ion-content>

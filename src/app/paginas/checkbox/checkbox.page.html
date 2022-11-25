@@ -7,24 +7,17 @@
         <ion-checkbox name="option" value="option" slot="start"></ion-checkbox>
         <ion-label>I agree to the terms and conditions</ion-label>
     </ion-item>-->
-
+<ion-label></ion-label>
     <ion-item>
-        <ion-checkbox name="agree" value="agree" (ionChange)="checkbox($event)">
+        <ion-checkbox name="pessoa" (ionChange)="checkbox($event)" [(ngModel)]="itemSelecionado">
         </ion-checkbox>
-        <ion-text>I'm agreeing to something</ion-text>
+        <ion-text class="ion-padding"> Marque a opção </ion-text>
     </ion-item>
     
     <ion-item>
-        <ion-checkbox name="agree" value="agree" (ionChange)="checkbox($event)">
-        </ion-checkbox>
-        <ion-text>I'm agreeing to something</ion-text>
-    </ion-item>
-
-    <ion-item>
-        <ion-label>Seu nome:</ion-label>
         <ion-textarea [readonly]="true" value={{txtArea}}></ion-textarea>
     </ion-item>
 
-    <ion-button (click)="enviar(option)">Enviar</ion-button>
+    <ion-button (click)="enviar(pessoa)">Enviar</ion-button>
 
 </ion-content>

@@ -1,5 +1,28 @@
-<app-header titulo="Páginas de Radio"><app-header>
+<app-header titulo="Página de Radio">
+</app-header>
 
 <ion-content>
+
+    <ion-list>
+        <ion-radio-group [allowEmptySelection]="false" value="pessoa" [(ngModel)]="itemSelecionado">
+            <ion-label class="ion-padding">O que você escolhe?</ion-label>
+            <ion-item>
+                <ion-label>Dota</ion-label>
+                <ion-radio slot="end" value="Dota"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>League of Legends</ion-label>
+                <ion-radio slot="end" value="League of Legends"></ion-radio>
+            </ion-item>
+
+        </ion-radio-group>
+    
+        <ion-button (click)="radio(pessoa)">Enviar</ion-button>
+    </ion-list>
+
+    <ion-item>
+        <ion-textarea [readonly]="true" value={{txtArea}}></ion-textarea>
+    </ion-item>
 
 </ion-content>

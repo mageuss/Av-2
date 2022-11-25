@@ -5,10 +5,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
 
     <!-- List of Text Items -->
     <ion-list>
+      
       <ion-item *ngFor="let c of componentes" [routerLink]="c.link" detail>
         <ion-icon [name]="c.icone"></ion-icon>
         <ion-label>{{c.nome}}</ion-label>

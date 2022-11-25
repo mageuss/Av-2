@@ -7,6 +7,18 @@ const routes: Routes = [
   {
     path: '',
     component: FabPage
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('../input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'cards',
+    loadChildren: () => import('../cards/cards.module').then( m => m.CardsPageModule)
+  },
+  {
+    path: 'chekbox',
+    loadChildren: () => import('../checkbox/checkbox.module').then( m => m.CheckboxPageModule)
   }
 ];
 
