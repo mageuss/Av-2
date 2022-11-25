@@ -42,7 +42,7 @@ export class InicioPage implements OnInit {
       icone: '',
       nome: 'Inputs',
       link:'/input'
-    }
+    },
   ];
 
   constructor() { }

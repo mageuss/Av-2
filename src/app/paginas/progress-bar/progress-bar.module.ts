@@ -15,7 +15,7 @@ import { ComponentsModule } from 'src/app/components/components.module';
     FormsModule,
     IonicModule,
     ProgressBarPageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   declarations: [ProgressBarPage]
 })

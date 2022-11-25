@@ -21,7 +21,7 @@ export class CheckboxPage implements OnInit {
       this.txtArea = 'você marcou não a opção :(';
     }
     console.log(this.itemSelecionado);
-  }
+  };
 
 
   checkbox(event: any) {
@@ -36,8 +36,8 @@ export class CheckboxPage implements OnInit {
       console.log(this.i, ` unchecked`, event);
 
     }
-  }
+  };
   ngOnInit() {
-  }
+  };
 
 }

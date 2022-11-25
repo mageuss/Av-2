@@ -9,14 +9,14 @@ export class RadioPage implements OnInit {
 itemSelecionado: any;
 txtArea: string;
 
-  constructor() { }
+  constructor() { };
 
   async radio(pessoa){
     console.log(this.itemSelecionado);
     this.txtArea = this.itemSelecionado;
-  }
+  };
 
   ngOnInit() {
-  }
+  };
 
 }

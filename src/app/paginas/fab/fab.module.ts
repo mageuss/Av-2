@@ -15,7 +15,7 @@ import { ComponentsModule } from 'src/app/components/components.module';
     FormsModule,
     IonicModule,
     FabPageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   declarations: [FabPage]
 })

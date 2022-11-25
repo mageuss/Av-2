@@ -4,6 +4,7 @@
 <ion-content>
 
     <ion-list>
+        
         <ion-radio-group [allowEmptySelection]="false" value="pessoa" [(ngModel)]="itemSelecionado">
             <ion-label class="ion-padding">O que você escolhe?</ion-label>
             <ion-item>
@@ -19,6 +20,7 @@
         </ion-radio-group>
     
         <ion-button (click)="radio(pessoa)">Enviar</ion-button>
+        
     </ion-list>
 
     <ion-item>

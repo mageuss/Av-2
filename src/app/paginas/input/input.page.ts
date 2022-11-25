@@ -11,17 +11,17 @@ txtInput: string;
 txtArea: string;
 
 
-  constructor() { }
+  constructor() { };
 
   async presentEnviar(){
 
     this.txtArea = this.txtInput;
 
     console.log(this.txtInput);
-  }
+  };
 
   ngOnInit() {
-  }
+  };
 
 
 }

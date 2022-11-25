@@ -10,15 +10,15 @@ const routes: Routes = [
   },
   {
     path: 'input',
-    loadChildren: () => import('../input/input.module').then( m => m.InputPageModule)
+    loadChildren: () => import('../input/input.module').then(m => m.InputPageModule)
   },
   {
     path: 'cards',
-    loadChildren: () => import('../cards/cards.module').then( m => m.CardsPageModule)
+    loadChildren: () => import('../cards/cards.module').then(m => m.CardsPageModule)
   },
   {
     path: 'chekbox',
-    loadChildren: () => import('../checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+    loadChildren: () => import('../checkbox/checkbox.module').then(m => m.CheckboxPageModule)
   }
 ];
 
@@ -26,4 +26,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class FabPageRoutingModule {}
+export class FabPageRoutingModule { }

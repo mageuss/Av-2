@@ -12,4 +12,4 @@ export class CardsPage implements OnInit {
   ngOnInit() {
   }
 
-}
+};
