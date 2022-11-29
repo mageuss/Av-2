@@ -1,5 +1,7 @@
 {
   "name": "AppComponent",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
